@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'LPMQ';
+  src: url(../../font/LPMQ\ IsepMisbah-komputer.ttf)
+}
+/* custom scroll page */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #bbbbbb; 
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(33, 80, 39); 
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(56, 190, 112); 
+  }
+  
+  /* sidebar */
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 210px;
+    background-color: rgb(153, 190, 85);
+    position: fixed;
+    height: 100%;
+  }
+  
+  .list-surah{
+    overflow-y : scroll;
+    height: 60vh;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: #161b20;
+    padding-left: 30px;
+    padding-bottom: 5px;
+    text-decoration: none;
+  }
+  
+  .sidebar a.active {
+    background-color: rgb(115, 165, 100);
+    color: rgb(255, 255, 255);
+    padding-left: 20px;
+    text-decoration: none;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: rgb(115, 165, 100);
+    color: rgb(253, 255, 245);
+    padding-left: 20px;
+    text-decoration: none;
+  }
+  /* sidebar */
+  /* content */
+  body {
+    background-color: rgb(10, 11, 12);
+  }
+  
+  .content {
+    margin-left: 200px;
+    margin-right: 0px;
+    height: 100%;
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .list-surah{
+      overflow-y : scroll;
+      height: 20vh;
+    }
+    .sidebar a {float: left;}
+    div.content {
+      margin-left: 0;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+  
+  .ayat-box{
+    width: 100%;
+    height: 80vh;
+    padding-right: 10px;
+    overflow-y : scroll;
+    text-align: right;
+  }
+
+  .ayat-font{
+    font-family: 'LPMQ';
+    color: rgb(7, 7, 7);
+    font-size: 30px;
+    line-height: 8.3vh;
+  }
+  
+  .tafsir-box{
+    width: 100%;
+    height: 80vh;
+    padding-right: 10px;
+    text-align: left;
+  }
+  
+  .text-image-cetner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* content */
