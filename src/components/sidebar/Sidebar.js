@@ -87,7 +87,6 @@ class Sidebar extends Component {
 
         {/* content */}
         <div className='content'>
-          <Container>
             <Row>
               <Col>
                 <div className="mt-1">
@@ -113,7 +112,6 @@ class Sidebar extends Component {
                     component={route.dataTafsir}
                 />
             ))}
-          </Container>
         </div>
       </div>
       
