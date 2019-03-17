@@ -1,5 +1,9 @@
-@font-face {
+/* @font-face {
   font-family: 'LPMQ';
+  src: url(../../font/LPMQ\ IsepMisbah-komputer.ttf)
+} */
+@font-face {
+  font-family: 'pdms-saleem';
   src: url(../../font/LPMQ\ IsepMisbah-komputer.ttf)
 }
 /* custom scroll page */
@@ -102,9 +106,9 @@
   }
 
   .ayat-font{
-    font-family: 'LPMQ';
+    font-family: 'pdms-saleem';
     color: rgb(7, 7, 7);
-    font-size: 24px;
+    font-size: 25px;
     line-height: 8.3vh;
   }
   
