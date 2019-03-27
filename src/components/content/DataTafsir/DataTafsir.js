@@ -48,7 +48,7 @@ class DataTafsir extends Component{
                         <div className='tafsir-box'>
                         {this.state.dataTafsir.map(dataTafsir_ =>
                             <Element name={dataTafsir_.noAyat}>
-                                <p><b>{dataTafsir_.tafsirIbnuKatsir}</b>
+                                <p>{dataTafsir_.tafsirIbnuKatsir}
                                 <br/>
                                 </p>
                             </Element>
